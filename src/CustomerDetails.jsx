@@ -11,9 +11,9 @@ const CustomerDetails = () => {
     // const productAPI="http://localhost:3000/products"
    // const customerAPI="http://localhost:3000/customers";
     //const orderAPI="http://localhost:3000/orders";
-    const productAPI="striking-comfort-production-2d21.up.railway.app/products";
-    const customerAPI="striking-comfort-production-2d21.up.railway.app/customers";
-    const orderAPI="striking-comfort-production-2d21.up.railway.app/orders";
+    const productAPI="https://striking-comfort-production-2d21.up.railway.app/products";
+    const customerAPI="https://striking-comfort-production-2d21.up.railway.app/customers";
+    const orderAPI="https://striking-comfort-production-2d21.up.railway.app/orders";
 
       async function getCustomerDetails()
     {
