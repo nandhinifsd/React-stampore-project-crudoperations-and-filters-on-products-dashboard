@@ -1,0 +1,12 @@
+{
+  "name": "stampora-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "json-server --host 0.0.0.0 --port $PORT db.json"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}
