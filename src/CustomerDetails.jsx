@@ -8,9 +8,12 @@ const CustomerDetails = () => {
     const [customer,setCustomer]=useState();
     const [orders, setOrders]=useState([]);
      const [products, setProducts] = useState([]);
-     const productAPI="http://localhost:3000/products"
-    const customerAPI="http://localhost:3000/customers";
-    const orderAPI="http://localhost:3000/orders";
+    // const productAPI="http://localhost:3000/products"
+   // const customerAPI="http://localhost:3000/customers";
+    //const orderAPI="http://localhost:3000/orders";
+    const productAPI="striking-comfort-production-2d21.up.railway.app/products";
+    const customerAPI="striking-comfort-production-2d21.up.railway.app/customers";
+    const productAPI="striking-comfort-production-2d21.up.railway.app/orders";
 
       async function getCustomerDetails()
     {
