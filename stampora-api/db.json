@@ -364,5 +364,277 @@
       "sealImage": "https://www.stampsonclick.com/uploads/template_image/26-07-2018_approved.jpg"
     }
   ],
-  "$schema": "./node_modules/json-server/schema.json"
+  "$schema": "./node_modules/json-server/schema.json",
+
+
+  "customers": [
+    {
+      "id": 1,
+      "name": "Priya Kumar",
+      "phone": "9876543210",
+      "email": "priya.kumar@gmail.com",
+      "address": "12 MG Road, Bengaluru, Karnataka - 560001"
+    },
+    {
+      "id": 2,
+      "name": "Arun Raj",
+      "phone": "9845012345",
+      "email": "arun.raj@gmail.com",
+      "address": "45 Anna Nagar, Chennai, Tamil Nadu - 600040"
+    },
+    {
+      "id": 3,
+      "name": "Meena Srinivasan",
+      "phone": "9987654321",
+      "email": "meena.srinivasan@gmail.com",
+      "address": "18 RS Puram, Coimbatore, Tamil Nadu - 641002"
+    },
+    {
+      "id": 4,
+      "name": "Rahul Sharma",
+      "phone": "9123456789",
+      "email": "rahul.sharma@gmail.com",
+      "address": "27 Sector 17, Chandigarh - 160017"
+    },
+    {
+      "id": 5,
+      "name": "Ananya Iyer",
+      "phone": "9765432108",
+      "email": "ananya.iyer@gmail.com",
+      "address": "8 Koregaon Park, Pune, Maharashtra - 411001"
+    },
+    {
+      "id": 6,
+      "name": "Vikram Menon",
+      "phone": "9898765432",
+      "email": "vikram.menon@gmail.com",
+      "address": "33 Marine Drive, Kochi, Kerala - 682031"
+    },
+    {
+      "id": 7,
+      "name": "Sneha Reddy",
+      "phone": "9012345678",
+      "email": "sneha.reddy@gmail.com",
+      "address": "21 Banjara Hills, Hyderabad, Telangana - 500034"
+    }
+  ],
+  "orders": [
+  {
+    "id": "ORD001",
+    "customerId": 1,
+    "orderDate": "2026-08-18",
+    "items": [
+      {
+        "productId": "RST001",
+        "quantity": 2,
+        "price": 699
+      }
+    ],
+    "customerDesignImage": "/customer-designs/ORD001.png",
+    "totalAmount": 1398,
+    "status": "completed",
+    "payment-mode":"UPI",
+    "payment":"While Ordering"
+  },
+  {
+    "id": "ORD002",
+    "customerId": 1,
+    "orderDate": "2026-08-20",
+    "items": [
+      {
+        "productId": "RST007",
+        "quantity": 1,
+        "price": 599
+      },
+      {
+        "productId": "RST013",
+        "quantity": 1,
+        "price": 499
+      }
+    ],
+    "customerDesignImage": "/customer-designs/ORD002.png",
+    "totalAmount": 1098,
+    "status": "processing",
+    "payment-mode":"COD",
+    "payment":"After Delivery"
+  },
+  {
+    "id": "ORD003",
+    "customerId": 2,
+    "orderDate": "2026-08-15",
+    "items": [
+      {
+        "productId": "RST003",
+        "quantity": 3,
+        "price": 399
+      }
+    ],
+    "customerDesignImage": "/customer-designs/ORD003.png",
+    "totalAmount": 1197,
+    "status": "completed",
+    "payment-mode":"COD",
+    "payment":"On Delivery"
+  },
+  {
+    "id": "ORD004",
+    "customerId": 2,
+    "orderDate": "2026-08-21",
+    "items": [
+      {
+        "productId": "RST016",
+        "quantity": 1,
+        "price": 3500
+      }
+    ],
+    "customerDesignImage": "/customer-designs/ORD004.png",
+    "totalAmount": 3500,
+    "status": "cancelled",
+    "payment-mode":"UPI",
+    "payment":"Refund Completed"
+  },
+  {
+    "id": "ORD005",
+    "customerId": 3,
+    "orderDate": "2026-08-17",
+    "items": [
+      {
+        "productId": "RST009",
+        "quantity": 1,
+        "price": 899
+      },
+      {
+        "productId": "RST020",
+        "quantity": 2,
+        "price": 150
+      }
+    ],
+    "customerDesignImage": "/customer-designs/ORD005.png",
+    "totalAmount": 1199,
+    "status": "processing",
+    "payment-mode":"COD",
+    "payment":"After Delivery"
+  },
+  {
+    "id": "ORD006",
+    "customerId": 3,
+    "orderDate": "2026-08-19",
+    "items": [
+      {
+        "productId": "RST021",
+        "quantity": 2,
+        "price": 150
+      }
+    ],
+    "customerDesignImage": "/customer-designs/ORD006.png",
+    "totalAmount": 300,
+    "status": "completed",
+    "payment-mode":"COD",
+    "payment":"On Delivery"
+  },
+  {
+    "id": "ORD007",
+    "customerId": 4,
+    "orderDate": "2026-08-20",
+    "items": [
+      {
+        "productId": "RST010",
+        "quantity": 1,
+        "price": 500
+      },
+      {
+        "productId": "RST014",
+        "quantity": 1,
+        "price": 499
+      }
+    ],
+    "customerDesignImage": "/customer-designs/ORD007.png",
+    "totalAmount": 999,
+    "status": "processing",
+    "payment-mode":"UPI",
+    "payment":"While Ordering"
+  },
+  {
+    "id": "ORD008",
+    "customerId": 5,
+    "orderDate": "2026-08-16",
+    "items": [
+      {
+        "productId": "RST018",
+        "quantity": 2,
+        "price": 150
+      },
+      {
+        "productId": "RST019",
+        "quantity": 1,
+        "price": 150
+      }
+    ],
+    "customerDesignImage": "/customer-designs/ORD008.png",
+    "totalAmount": 450,
+    "status": "cancelled",
+    "payment-mode":"UPI",
+    "payment":"Refund Initiated"
+  },
+  {
+    "id": "ORD009",
+    "customerId": 6,
+    "orderDate": "2026-08-21",
+    "items": [
+      {
+        "productId": "RST017",
+        "quantity": 1,
+        "price": 449
+      }
+    ],
+    "customerDesignImage": "/customer-designs/ORD009.png",
+    "totalAmount": 449,
+    "status": "processing",
+    "payment-mode":"UPI",
+    "payment":"While Ordering"
+  },
+  {
+    "id": "ORD010",
+    "customerId": 7,
+    "orderDate": "2026-08-14",
+    "items": [
+      {
+        "productId": "RST008",
+        "quantity": 1,
+        "price": 699
+      },
+      {
+        "productId": "RST024",
+        "quantity": 2,
+        "price": 250
+      }
+    ],
+    "customerDesignImage": "/customer-designs/ORD010.png",
+    "totalAmount": 1199,
+    "status": "completed",
+    "payment-mode":"COD",
+    "payment":"After Delivery"
+  },
+  {
+    "id": "ORD011",
+    "customerId": 7,
+    "orderDate": "2026-08-22",
+    "items": [
+      {
+        "productId": "RST022",
+        "quantity": 1,
+        "price": 250
+      },
+      {
+        "productId": "RST025",
+        "quantity": 1,
+        "price": 250
+      }
+    ],
+    "customerDesignImage": "/customer-designs/ORD011.png",
+    "totalAmount": 500,
+    "status": "processing",
+    "payment-mode":"COD",
+    "payment":"On Delivery"
+  }
+]
 }

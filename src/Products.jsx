@@ -10,8 +10,7 @@ const Products = () => {
     const [showFilters, setShowFilters] = useState(false);
     const [productPage,setProductPage]=useState(true);
      const [products, setProducts] = useState([]);
-     //const API ="http://localhost:3000/products";
-      const API="https://react-stampore-project-crudoperations-and-filter-production.up.railway.app/products";
+     const API ="http://localhost:3000/products";
      const location=useLocation();
 {/* States to apply filters*/}
 const [selectedCatagory, setSelectedCatagory] = useState("");
