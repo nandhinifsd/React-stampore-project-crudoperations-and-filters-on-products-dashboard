@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Customers = () => {
   const [customers, setCustomers]=useState([]);
-  const customerAPI="http://localhost:3000/customers";
+  const customerAPI="https://striking-comfort-production-2d21.up.railway.app/customers";
     const navigate=useNavigate();
 useEffect(()=>
 {
