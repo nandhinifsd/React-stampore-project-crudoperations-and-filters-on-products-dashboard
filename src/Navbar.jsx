@@ -42,7 +42,7 @@ const Navbar = () => {
                 {
                     isOpen &&
                     <div className='menu md:hidden flex flex-col mt-0 p-1 w-screen border text-blue-900 font-bold'>
-                       <button  className= ' m-0.5 p-1 block w-full link-btn  bg-white' onClick={()=>setIsOpen(!isOpen)}> <Link to="/">Login</Link></button> 
+                       <button  className= ' m-0.5 p-1 block w-full link-btn  bg-white' onClick={()=>setIsOpen(!isOpen)}> <Link to="/">Home</Link></button> 
                        <button  className= ' m-0.5 p-1 block w-full link-btn  bg-white' onClick={()=>setIsOpen(!isOpen)}> <Link to="/products">Products</Link></button> 
                        <button  className= ' m-0.5 p-1 block link-btn bg-white' onClick={()=>setIsOpen(!isOpen)}> <Link className=' ' to="/customers ">Customers</Link></button> 
                         
