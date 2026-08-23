@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { useParams,Link } from 'react-router-dom';
 
 const CustomerDetails = () => {
     const { id } =useParams();
@@ -77,8 +77,9 @@ getCustomerDetails();
   return (
     <>
     {customer && (
-    <div className="font-serif font-black text-2xl lg:text-4xl text-blue-900 m-2 lg:m-8 p-8 text-center">
-        <h1> Customer Details</h1>
+    <div className="font-serif font-black text-blue-900 p-8">
+         <Link to="/customers" className="inline-flex items-center gap-2 px-4 py-2 bg-blue-900 text-md text-white rounded-lg hover:bg-blue-700 transition">
+  ← Back to Customers</Link><span><h1 className="text-2xl lg:text-4xl m-2 lg:m-8 text-center"> Customer Details</h1></span>
         <div className='flex flex-col lg:flex-row lg:gap-1 gap-10 w-full p-2 m-4 justify-around'>
         <div className="w-full lg:w-1/2 shadow-lg rounded-lg h-auto customer-card p-2 font-serif font-normal text-blue-900 text-left bg-gradient-to-r from-cyan-100 to-teal-100 to-yellow-100 flex flex-col">
         <h1 className="text-sm lg:text-xl p-2 m-1">Name: {customer.name}</h1>
@@ -90,7 +91,7 @@ getCustomerDetails();
         </div>
         <div className="logs-cards w-auto flex flex-row flex-wrap flex-shrink lg:flex-col justify-center gap-8">
         <div className="flex flex-row gap-8 flex-shrink">   
-        <div className="order-count-logs  px-14 py-8 flex flex-col justify-center items-center text-white bg-blue-600   h-auto rounded-lg shadow-lg">
+        <div className="order-count-logs  px-11 py-8 lg:px-14 flex flex-col justify-center items-center text-white bg-blue-600   h-auto rounded-lg shadow-lg">
         
             <h1 className="text-sm lg:text-2xl font-semibold">Orders<br/></h1>
             <p className="text-md lg:text-7xl font-black">{orders.length}</p>
@@ -110,7 +111,7 @@ getCustomerDetails();
             <p className="text-md lg:text-7xl font-black">{processingOrders.length}</p>
         
          </div>
-          <div className="order-count-logs  px-10 py-8 flex flex-col justify-center items-center text-white bg-red-500  h-auto rounded-lg shadow-lg">
+          <div className="order-count-logs px-9 py-8 lg:px-10 flex flex-col justify-center items-center text-white bg-red-500  h-auto rounded-lg shadow-lg">
         
             <h1 className="text-sm lg:text-2xl font-semibold">Cancelled <br/></h1>
             <p className="text-md lg:text-7xl font-black">{cancelledOrders.length}</p>
@@ -120,7 +121,7 @@ getCustomerDetails();
         </div></div>
 
         </div>
-        <div className="order-cards m-4 p-2 gap-2 grid grid-col-1 sm: grid-col-2 md: grid-col-3 lg:grid-col-4 w-full">
+        <div className="order-cards m-1 p-1 lg:m-4 lg:p-2 gap-2 grid grid-col-1 sm: grid-col-2 md: grid-col-3 lg:grid-col-4 w-full">
             
 
   <h2 className="text-xl lg:text-3xl font-bold mb-4"> Orders</h2>
@@ -140,7 +141,7 @@ getCustomerDetails();
      // const product = products.filter(product => product.id === order.items.productId);
       return (
         
-        <div key={order.id} className={`${bgColor} text-start p-4 flex flex-row justify-between rounded-xl shadow-lg text-white text-lg font-normal`}>
+        <div key={order.id} className={`${bgColor} text-start p-4 flex flex-col md:flex-row justify-between rounded-xl shadow-lg text-white text-lg font-normal`}>
          <div className="text-start p-4">
           <h3 className="font-bold text-lg">
             Order ID: {order.id}
