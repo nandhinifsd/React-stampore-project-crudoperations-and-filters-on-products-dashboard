@@ -8,7 +8,9 @@ import './App.css';
 import { Routes,Route } from 'react-router-dom';
 import ViewProducts from './ViewProducts';
 import CustomerDetails from './CustomerDetails';
+import Orders from './Orders';
 import Footer from './Footer';
+import OrderDetails from './OrderDetails';
 
 
 function App() {
@@ -27,6 +29,9 @@ function App() {
       
       <Route path="/customers" element={<Customers />} />
       <Route path="/customers/details/:id" element={<CustomerDetails />} />
+
+       <Route path="/orders" element={<Orders />} />
+      <Route path="/orders/details/:id" element={<OrderDetails />} />
     
      </Routes>
    <Footer />
