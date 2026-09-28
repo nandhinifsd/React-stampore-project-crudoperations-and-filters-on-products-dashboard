@@ -8,9 +8,12 @@ const CustomerDetails = () => {
     const [customer,setCustomer]=useState();
     const [orders, setOrders]=useState([]);
      const [products, setProducts] = useState([]);
-     const productAPI="http://localhost:3000/products"
-    const customerAPI="http://localhost:3000/customers";
-    const orderAPI="http://localhost:3000/orders";
+    // const productAPI="http://localhost:3000/products"
+   // const customerAPI="http://localhost:3000/customers";
+    //const orderAPI="http://localhost:3000/orders";
+    const productAPI="https://striking-comfort-production-2d21.up.railway.app/products";
+    const customerAPI="https://striking-comfort-production-2d21.up.railway.app/customers";
+    const orderAPI="https://striking-comfort-production-2d21.up.railway.app/orders";
 
       async function getCustomerDetails()
     {
@@ -74,10 +77,12 @@ getCustomerDetails();
   return (
     <>
     {customer && (
+
     <div className="font-serif font-black  text-blue-900 m-2  p-8 ">
     <Link to="/customers" className="inline-flex items-center gap-2 px-4 py-2 bg-blue-900 text-md text-white rounded-lg hover:bg-blue-700 transition">
   ← Back to Customers</Link><span><h1 className="text-2xl lg:text-4xl lg:m-8 text-center"> Customer Details</h1></span>
         <div className='flex flex-col lg:flex-row lg:gap-1 gap-10 w-full p-2 m-1 lg:m-4  justify-around'>
+
         <div className="w-full lg:w-1/2 shadow-lg rounded-lg h-auto customer-card p-2 font-serif font-normal text-blue-900 text-left bg-gradient-to-r from-cyan-100 to-teal-100 to-yellow-100 flex flex-col">
         <h1 className="text-sm lg:text-xl p-2 m-1">Name: {customer.name}</h1>
         <h2 className="text-sm lg:text-xl p-2 m-1">Phone: {customer.phone}</h2>
@@ -108,7 +113,9 @@ getCustomerDetails();
             <p className="text-md lg:text-7xl font-black">{processingOrders.length}</p>
         
          </div>
+
           <div className="order-count-logs  px-9 py-8 lg:px-10 flex flex-col justify-center items-center text-white bg-red-500  h-auto rounded-lg shadow-lg">
+
         
             <h1 className="text-sm lg:text-2xl font-semibold">Cancelled <br/></h1>
             <p className="text-md lg:text-7xl font-black">{cancelledOrders.length}</p>

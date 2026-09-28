@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Customers = () => {
   const [customers, setCustomers]=useState([]);
-  const customerAPI="http://localhost:3000/customers";
+  const customerAPI="https://striking-comfort-production-2d21.up.railway.app/customers";
     const navigate=useNavigate();
 useEffect(()=>
 {
@@ -29,7 +29,9 @@ async function getCustomers()
     <div>
       <h1 className="font-serif font-black text-xl lg:text-4xl text-blue-900 mt-3 text-center">Customer Information</h1>
       <table className="w-full text-blue-900 my-5 p-3">
+
         <thead className=" bg-gradient-to-r from-cyan-100 to-teal-100 to-yellow-100 text-center lg:text-xl text-xs p-1 lg:p-8 h-[30px] w-full">
+
         <tr>
           <th className="p-4">Customer Name</th>
           <th className="p-4">Customer Phone Number</th>
