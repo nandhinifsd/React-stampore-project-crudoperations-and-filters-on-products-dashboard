@@ -12,9 +12,13 @@ const OrderDetails = () => {
        const [status, setStatus] = useState("");
         const [payment, setPayment] = useState("");
         const [paymentmode, setPaymentmode] = useState("");
-       const productAPI="http://localhost:3000/products"
-      const customerAPI="http://localhost:3000/customers";
-      const orderAPI="http://localhost:3000/orders";
+       //const productAPI="https://striking-comfort-production-2d21.up.railway.app/products"
+      //const customerAPI="https://striking-comfort-production-2d21.up.railway.app/customers";
+      //const orderAPI="https://striking-comfort-production-2d21.up.railway.app/orders";
+
+      const productAPI="https://react-stampore-project-crudoperations.onrender.com/products";
+      const customerAPI="https://react-stampore-project-crudoperations.onrender.com/customers";
+      const orderAPI="https://react-stampore-project-crudoperations.onrender.com/orders";
   
  async function getOrderDetails()
     {

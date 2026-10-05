@@ -11,7 +11,8 @@ const Products = () => {
     const [productPage,setProductPage]=useState(true);
      const [products, setProducts] = useState([]);
      //const API ="http://localhost:3000/products";
-    const API="https://striking-comfort-production-2d21.up.railway.app/products";
+    //const API="https://striking-comfort-production-2d21.up.railway.app/products";
+    const API="https://react-stampore-project-crudoperations.onrender.com/products";
      const location=useLocation();
 {/* States to apply filters*/}
 const [selectedCatagory, setSelectedCatagory] = useState("");

@@ -4,11 +4,13 @@ import { useNavigate } from 'react-router-dom';
 
 const Orders = () => {
     const [orders, setOrders]=useState([]);
-  const OrderAPI="http://localhost:3000/orders";
+ // const OrderAPI="https://striking-comfort-production-2d21.up.railway.app/orders";
+ const OrderAPI="https://react-stampore-project-crudoperations.onrender.com/orders";
     const navigate=useNavigate();
 useEffect(()=>
 {
   getOrders();
+   alert("Click on the Orders row to know more details")
 },[]);
 async function getOrders()
 {
@@ -56,13 +58,17 @@ async function getOrders()
         <tbody>
           { orders.map((order)=>(
               <tr key={order.id} 
-              className= "odd:bg-white even:bg-yellow-50 hover:bg-teal-50 cursor-pointer" 
+              className= "odd:bg-white even:bg-yellow-50 group relative hover:bg-teal-50 cursor-pointer" 
               onClick={()=>navigate(`/orders/details/${order.id}`)}>
                 <td className="p-4 font-normal hover:font-semibold text-center">{order.orderDate}</td>
                 <td className="p-4 font-normal hover:font-semibold text-center"><p className={`${getStatusDesign(order.status)} my-1 px-4 py-2 font-normal hover:font-semibold `}>{order.status}</p></td>
                 <td className="p-4 font-normal hover:font-semibold text-center">{order.totalAmount}</td>
                 <td className="p-4 font-normal hover:font-semibold text-center ">{order.payment}</td>
                 <td className="p-4 font-normal hover:font-semibold text-center">{order.paymentmode}</td>
+                 <div className=" hidden group-hover:block absolute right-4 top-1/2-translate-y-1/2
+        bg-white border border-gray-300 rounded-md shadow-md px-3 py-2 text-sm text-gray-700">
+                        Click here to know more about {order.id}
+                      </div>
               </tr> 
               ))}
         </tbody>
