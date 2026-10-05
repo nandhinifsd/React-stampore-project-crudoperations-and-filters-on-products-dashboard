@@ -18,8 +18,9 @@ function App() {
 
   return (
     <>
+      <div className="min-h-screen flex flex-col">
     <Navbar />
-    
+    <main className='flex-grow'>
      <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/products" element={<Products />}> 
@@ -34,8 +35,9 @@ function App() {
       <Route path="/orders/details/:id" element={<OrderDetails />} />
     
      </Routes>
+     </main>
    <Footer />
-
+</div>
     </>
   )
 }

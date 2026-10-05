@@ -52,7 +52,7 @@ const [sortOrder, setSortOrder] = useState("");
       }
   }
   return (
-    <div className='products-container relative w-screen h-screen bg-white lg:flex flex-row'>
+    <div className='products-container relative w-screen min-h-screen bg-white lg:flex flex-row'>
         {
             !sideBar &&(
             <button className='lg:hidden text-2xl bg-transparent ms-0 ps-0 pt-1 pb-1' onClick={()=>setSideBar(true)} >
@@ -151,7 +151,7 @@ const [sortOrder, setSortOrder] = useState("");
          onClick={()=>{setProductPage(true);
             setSideBar(false);}
          }>
-         <Link to="/products" className="text-xl font-bold p-2 m-1">View Products</Link>
+         <Link to="/products" className="text-xl font-bold p-2 m-1 flex-grow">View Products</Link>
          </button>
        
         </div>

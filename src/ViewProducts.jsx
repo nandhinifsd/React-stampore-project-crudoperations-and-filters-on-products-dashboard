@@ -50,6 +50,7 @@ if(sortOrder==="price low to high")
   return (
     <div>
        <h1 className='font-serif text-blue-900 text-2xl font-bold m-2 p-1'>Our Products</h1>
+       <div className="flex-grow">
         <div className='products-display grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'>
          {  MatchedProducts.map((product)=>(
                   <Productcard key={product.id}
@@ -57,6 +58,7 @@ if(sortOrder==="price low to high")
                               onDelete={deleteProducts}
                               onEdit={editProducts}/>
         ) )}
+         </div>
          </div>
     </div>
   );
