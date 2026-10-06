@@ -43,7 +43,7 @@ async function getOrders()
 }
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center mt-30">
       <h1 className="font-serif font-black text-xl lg:text-4xl text-blue-900 mt-3 text-center">Customer Information</h1>
       <table className="w-full text-blue-900 my-5 p-3">
         <thead className=" bg-gradient-to-r from-cyan-100 to-teal-100 to-yellow-100 text-center lg:text-xl text-xs p-1 lg:p-8 h-[30px] w-full">

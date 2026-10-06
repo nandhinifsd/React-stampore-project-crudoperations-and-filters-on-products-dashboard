@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <div>
-        <nav className='navbar-container flex flex-row  w-screen h-auto py-2 px-4 bg-gradient-to-r from-cyan-100 to-teal-100 to-yellow-100 justify-between'>
+        <nav className='navbar-container flex flex-row  w-screen h-auto py-2 px-4 bg-gradient-to-r from-cyan-100 to-teal-100 to-yellow-100 justify-between fixed top-0 left-0  z-500'>
       <div className='heading-container flex flex-row w-2xl px-2 py-1 justify-between'>
         <img className='logo-img' src='/icons/logo.png' alt='Logo Image' width="100px" height="50px" />
             <h1 className='title-txt hidden lg:flex  lg:text-4xl font-serif bg-gradient-to-r from-blue-950 to-indigo-600 bg-clip-text text-transparent py-2 px-1 my-2 mx-3 font-black'>STAMPORA DASHBOARD</h1>

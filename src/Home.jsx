@@ -3,7 +3,7 @@ import React from 'react';
 const Home = () => {
   return (
     <div>
-      <div className="rounded-lg m-10 p-4 w-90%  h-auto">
+      <div className="rounded-lg mt-50 m-10 p-4 w-90%  h-auto">
       <img src="/icons/workflow.png" alt="How we Work" width="100%" height="auto"></img>
     </div>
     <div className=" rounded-lg shadow-lg m-12 p-4 w-90%  h-auto bg-gradient-to-r from-cyan-100 to-teal-100 to-yellow-100 font-serif">

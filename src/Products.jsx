@@ -52,7 +52,7 @@ const [sortOrder, setSortOrder] = useState("");
       }
   }
   return (
-    <div className='products-container relative w-screen min-h-screen bg-white lg:flex flex-row'>
+    <div className='products-container relative w-screen min-h-screen bg-white lg:flex flex-row mt-30'>
         {
             !sideBar &&(
             <button className='lg:hidden text-2xl bg-transparent ms-0 ps-0 pt-1 pb-1' onClick={()=>setSideBar(true)} >
